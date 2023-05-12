@@ -1,3 +1,5 @@
+#-------------------------------------------------------------
+# Vaviable for Resource Group
 # Resource Group
 
 variable "rg_name" {
@@ -17,7 +19,8 @@ variable "rg_location" {
     default = "Central India"  
 
 }
-
+#-------------------------------------------------------------
+# Vaviable for Virtual Network
 # VNet Name
 
 variable "vnet_name" {
@@ -37,6 +40,8 @@ variable "vnet_add_space" {
 
 }
 
+#-------------------------------------------------------------
+# Vaviable for VNet -> Web Server Subnet
 # Web Subnet name
 variable "web_subnet_name" {
     description = "Web Subnet name"
@@ -54,6 +59,16 @@ variable "web_subnet_address" {
   
 }
 
+# Web NSG name
+variable "web_nsg" {
+    description = "Web Subnet NSG"
+    type = string
+    default = "web_nsg"
+  
+}
+
+#-------------------------------------------------------------
+# Vaviable for VNet -> App Server Subnet and NSG
 # APP Subnet name
 variable "app_subnet_name" {
     description = "App Subnet name"
@@ -71,6 +86,16 @@ variable "app_subnet_address" {
   
 }
 
+# App NSG name
+variable "app_nsg" {
+    description = "App Subnet NSG"
+    type = string
+    default = "app_nsg"
+  
+}
+
+#-------------------------------------------------------------
+# Vaviable for VNet -> Database Server Subnet and NSG
 # Database Subnet name
 variable "db_subnet_name" {
     description = "Database Subnet name"
@@ -88,6 +113,16 @@ variable "db_subnet_address" {
   
 }
 
+# Database NSG name
+variable "db_nsg" {
+    description = "db Subnet NSG"
+    type = string
+    default = "db_nsg"
+  
+}
+  
+#-------------------------------------------------------------
+# Vaviable for VNet -> bastion Server Subnet and NSG
 # Bastion Subnet name
 variable "bastion_subnet_name" {
     description = "Bastion Subnet name"
@@ -95,12 +130,17 @@ variable "bastion_subnet_name" {
     default = "bastion_subnet"
   
 }
-
-# Database Subnet address space
-
 variable "bastion_subnet_address" {
-    description = "bastion Subnet Address Space"
+    description = "Bastion Subnet Address Space"
     type = list(string)
-    default = [ "10.10.2.0/24" ]
+    default = [ "10.10.3.0/24" ]
+}
+
+# Bastion NSG name
+variable "bastion_nsg" {
+    description = "bastion Subnet NSG"
+    type = string
+    default = "bastion_nsg"
   
+
 }
