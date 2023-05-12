@@ -21,7 +21,7 @@ locals {
     "110" : "443",
     "120" : "22"
 }
-
+}
 # Create NSG Rule
 resource "azurerm_network_security_rule" "wb_nsg_rule_inbound" {
     for_each = local.web_inbound_port_map
@@ -39,7 +39,7 @@ resource "azurerm_network_security_rule" "wb_nsg_rule_inbound" {
     network_security_group_name = azurerm_network_security_group.web_nsg_1
 }
   
-}
+
 # Associate NSG to the web server subnet
 resource "azurerm_subnet_network_security_group_association" "web_subnet_association"{
     depends_on = [ azurerm_network_security_group.web_nsg_1 ]

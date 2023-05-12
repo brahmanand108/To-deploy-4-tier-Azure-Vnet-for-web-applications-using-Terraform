@@ -25,7 +25,7 @@ locals {
 }
 
 # Create NSG Rule for App Server
-resource "azurerm_network_security_rule" "wb_nsg_rule_inbound" {
+resource "azurerm_network_security_rule" "app_nsg_rule_inbound" {
     for_each = local.app_inbound_port_map
     
     name = "${var.app_nsg}-nsg_rule_port-${each.value}"
