@@ -1,4 +1,6 @@
 Azure Virtual Network 4-Tier design with Subnets and Network Security Groups using terraform
+
+
 4-Tier Azure Virtual Network 
 --------------------------------------------------------------------------------------------------------------------
 WebTier Subnet + WebTier Network Security Group (Ports 80, 443)
