@@ -1,6 +1,6 @@
 <h1> Description <h1>
 ```  
-<h3><p> 
+ 
   This project includes implementation of 4-tier Azure Virtual network for a web application. 
   The resources implemented are as follows:
     Azure virtual machine
@@ -11,7 +11,7 @@
     Managing Azure resource group and subscriptions
     Creating and managing traffic managers
   Azure Virtual Network 4-Tier design with Subnets and Network Security Groups using terraform
-<p><h3>
+
 ```
 <h1> 4-Tier Azure Virtual Network <h1>
   
