@@ -3,13 +3,13 @@
   This project includes implementation of 4-tier Azure Virtual network for a web application. 
   The resources implemented are as follows
   
-   Azure virtual machine
-   Creating and managing  Azure Virtual Network 4-Tier design with Subnets  
-   Working with load balancers
-   Custom domain
-   Creating and managing Azure Network Security Group (NSG)
-   Managing Azure resource group and subscriptions
-   Creating and managing traffic managers 
+  - Azure virtual machine
+  - Creating and managing  Azure Virtual Network 4-Tier design with Subnets  
+  - Working with load balancers
+  - Custom domain
+  - Creating and managing Azure Network Security Group (NSG)
+  - Managing Azure resource group and subscriptions
+  - Creating and managing traffic managers 
   
 
 # 4-Tier Azure Virtual Network 
