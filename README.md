@@ -1,4 +1,5 @@
 <h1> Description <h1>
+  
 <p> 
   This project includes implementation of 4-tier Azure Virtual network for a web application. 
   The resources implemented are as follows:
@@ -13,6 +14,7 @@
 <p>
 
 <h1> 4-Tier Azure Virtual Network <h1>
+  
   
 <p>
   WebTier Subnet + WebTier Network Security Group (Ports 80, 443)
