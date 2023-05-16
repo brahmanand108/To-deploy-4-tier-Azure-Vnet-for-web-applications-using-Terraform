@@ -1,5 +1,5 @@
 <h1> Description <h1>
-  
+```  
 <h3><p> 
   This project includes implementation of 4-tier Azure Virtual network for a web application. 
   The resources implemented are as follows:
@@ -12,15 +12,15 @@
     Creating and managing traffic managers
   Azure Virtual Network 4-Tier design with Subnets and Network Security Groups using terraform
 <p><h3>
-
+```
 <h1> 4-Tier Azure Virtual Network <h1>
   
   
-<p>
+<h3><p>
   WebTier Subnet + WebTier Network Security Group (Ports 80, 443)
   AppTier Subnet + AppTier Network Security Group (Ports 8080, 80, 443)
   DBTier Subnet + DBTier Network Security Group (Ports 3306, 1433, 5432)
   Bastion Subnet + Bastion Network Security Group (Ports 80, 3389)
-<p>
+<p><h3>
 
 
